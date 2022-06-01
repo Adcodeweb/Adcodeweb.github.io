@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width,  user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="estilo.css">
     <!-- GOOGLE FONTS -->
@@ -12,16 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/9d3e1b3252.js" crossorigin="anonymous"></script>
+
+    
     <title>AdNews</title>
 </head>
 
-<body>
+<body class="body">
   <!-- HEADER NAV -->
   <nav class="container-nav">
     <div class="logo-nav">
       <img src="Img/Adcodeweb.png" alt="Logo Adcodeweb">
     </div>
-    <div class="container-enlaces-nav">
+    <div class="container-enlaces-nav" id="show-menu">
       <ul class="enlaces-nav">
           <li><a href="#" class="botones">Inicio</a></li>
           <li><a href="#" class="botones">Proyectos</a></li>
@@ -29,86 +32,94 @@
           <li><a href="form/form.html" class="botones">Contacto</a></li>
       </ul>
     </div>  
+    <div id="icon-menu">
+      <i class="fas fa-bars"></i>
+    </divi> 
+
   </nav>
 
   <!-- LANDING PAGE -->
-  <main>
-    <section class="container-landing-page">
-      <div class="box-landing">
-        <div>
-          <h1>Adolfo Diaz</h1>
-          <p>Frontend developer, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, atque? . <br> acá podras encontrar mis trabajos</p>
+<div class="container-all" id="move-content">
 
-         <button class="work-btn"> 
-          <a href="#project" >  
-            <i class="fa-solid fa-arrow-down"></i>
-          </a>
-          </button>  
+  <section class="container-landing-page">
+    <div class="box-landing">
+      <div>
+        <h1>Adolfo Diaz</h1>
+        <p>Frontend developer, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, atque? . <br> acá podras encontrar mis trabajos</p>
 
-        </div> 
-      </div>      
-    </section>
+        <button class="work-btn"> 
+        <a href="#project" >  
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        </button>  
 
-    <div style="height: 150px; overflow: hidden;" class="ola1"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-10.96,31.14 C204.60,134.92 296.03,-37.03 500.00,50.06 L500.00,150.22 L0.00,150.22 Z" style="stroke: none; fill: #9BA3EB;"></path></svg></div>
-    <section class="box-2" id="box2">
-       <!-- OLA -->    
-     
-      
-      <!-- CAJA 2 -->
-      <div class="containerbox2" id="project">   
-        <h2 >Mis trabajos</h2>      
-        <div class="contentbox2">
-          <div class="cj1 cj">
-            <h3 class="cj-titulo" >Proyecto 1</h3>
-              <!-- CJ1 -->
-            <img src="Img/Sc1.png" alt="">
-            
+      </div> 
+    </div>      
+  </section>
 
-            <div class="tech">
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-js"></i>
-            </div>
-
-            <p class="cj-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur, itaque adipisci maiores expedita soluta iste qui! Quod nemo rem qui maxime tenetur sequi sed sunt minima. Quisquam, soluta facilis!</p>
-          </div>
-            <!-- CJ2 -->
-          <div class="cj2 cj">
-            <h3 class="cj-titulo">Proyecto 1</h3>
-
-            <img src="Img/Sc2.png" alt="">
-
-            <div class="tech">
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-
-            <p class="cj-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur, itaque adipisci maiores expedita soluta iste qui! Quod nemo rem qui maxime tenetur sequi sed sunt minima. Quisquam, soluta facilis!</p>
-          </div>
-            <!-- CJ3 -->
-          <div class="cj3 cj">
-            <h3 class="cj-titulo">Proyecto 1</h3>
-
-            <img src="Img/Sc3.png" alt="">
-
-            <div class="tech">
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-            </div>
-
-            <p class="cj-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur, itaque adipisci maiores expedita soluta iste qui! Quod nemo rem qui maxime tenetur sequi sed sunt minima. Quisquam, soluta facilis!</p>
-          </div>
+  <div style="height: 150px; overflow: hidden;" class="ola1"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-10.96,31.14 C204.60,134.92 296.03,-37.03 500.00,50.06 L500.00,150.22 L0.00,150.22 Z" style="stroke: none; fill: #9BA3EB;"></path></svg></div>
+  <section class="box-2" id="box2">
+      <!-- OLA -->    
+    
+    
+    <!-- CAJA 2 -->
+    <div class="containerbox2" id="project">   
+      <h2 >Mis trabajos</h2>      
+      <div class="contentbox2">
+        <div class="cj1 cj">
+          <h3 class="cj-titulo" >Proyecto 1</h3>
+            <!-- CJ1 -->
+          <img src="Img/Sc1.png" alt="">
           
-          </div>                
+
+          <div class="tech">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+
+          <p class="cj-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur, itaque adipisci maiores expedita soluta iste qui! Quod nemo rem qui maxime tenetur sequi sed sunt minima. Quisquam, soluta facilis!</p>
         </div>
+          <!-- CJ2 -->
+        <div class="cj2 cj">
+          <h3 class="cj-titulo">Proyecto 1</h3>
+
+          <img src="Img/Sc2.png" alt="">
+
+          <div class="tech">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+
+          <p class="cj-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur, itaque adipisci maiores expedita soluta iste qui! Quod nemo rem qui maxime tenetur sequi sed sunt minima. Quisquam, soluta facilis!</p>
+        </div>
+          <!-- CJ3 -->
+        <div class="cj3 cj">
+          <h3 class="cj-titulo">Proyecto 1</h3>
+
+          <img src="Img/Sc3.png" alt="">
+
+          <div class="tech">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+
+          <p class="cj-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur, itaque adipisci maiores expedita soluta iste qui! Quod nemo rem qui maxime tenetur sequi sed sunt minima. Quisquam, soluta facilis!</p>
+        </div>
+        
+        
+        </div>                
       </div>
-    </section>    
-  </main>
+    </div>
+  </section>    
+  
   
   <div style="height: 150px; overflow: hidden;" class="ola2"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,50.06 C141.40,-68.66 274.58,143.81 500.00,50.06 L500.00,150.22 L0.00,150.22 Z" style="stroke: none; fill: #646FD4;"></path></svg></div>
-  <footer>
+  <footer class="container-footer">
     <h2>Copyright 2022 - Adcodeweb</h2>
   </footer>
-    
+
+</div>
+    <script src="main.js"></script>
 </body>
 </html>
