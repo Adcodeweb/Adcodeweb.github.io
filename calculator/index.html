@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" defer ></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="/img/Adcodeweb-light.png" alt=""> 
+    </div>
+
+    <div class="container__calculator">
+
+        <div class="container__screen__calculator">
+            <div class="previous-operand" data-previous-operand></div>
+            <div class="current-operand" data-current-operand></div>
+        </div>
+
+        <div class="container__buttons__calculator">
+            <div class="buttons__calculator" id="botones">
+                
+                <button class="calc_button is-clear" data-all-clear >AC</button>
+                <button class="calc_button" data-delete>DEL</button>
+                <button class="calc_button" data-operation>+</button>
+
+                <button class="calc_button number" data-number>1</button>
+                <button class="calc_button number" data-number>2</button>
+                <button class="calc_button number" data-number>3</button>
+                <button class="calc_button " data-operation>-</button>
+
+                <button class="calc_button number" data-number>4</button>
+                <button class="calc_button number" data-number>5</button>
+                <button class="calc_button number" data-number>6</button>
+                <button class="calc_button " data-operation>×</button>
+
+                <button class="calc_button number" data-number>7</button>
+                <button class="calc_button number" data-number>8</button>
+                <button class="calc_button number" data-number>9</button>
+                <button class="calc_button " data-operation>÷</button>
+
+                <button class="calc_button " data-number>.</button>
+                <button class="calc_button is-cero" data-number>0</button>
+                <button class="calc_button is-equal" data-equals>=</button>
+
+                  
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by: <a href="mailto:adcodeweb@gmail.com"> Ad.Codeweb </a></p>
+    </footer>
+
+    
+</body>
+</html>
